@@ -96,7 +96,7 @@ img.img0{
   z-index: 1;
 }
 
-p.text{
+p.paragraphUnderBiggestText{
 //styleName: Regular 18;
   font-family: Roboto, serif;
   font-size: 18px;
@@ -107,7 +107,7 @@ p.text{
   text-align: left;
   color: #6F7CB2;
 }
-h1.text2{
+h1.biggestText{
 //styleName: Medium 50;
   font-family: Roboto, serif;
   font-size: 50px;
@@ -158,14 +158,14 @@ img.img1{
   top: 1220px;
   border-radius: 0px;
 }
-div.text3{
+div.secondTextPosition{
   position: relative;
   height: 48px;
   left: 290px;
   right: 0px;
   top: 750px;
 }
-h1.text4{
+h1.secondTextProperty{
   height: 48px;
   width: 540px;
   left: 0px;
@@ -177,11 +177,10 @@ h1.text4{
   font-size: 36px;
   line-height: 48px;
   color: #091133;
-//styleName: Medium 36;
   letter-spacing: 0px;
   text-align: left;
 }
-p.text5{
+p.secondParagraphProperty{
   width: 540px;
   left: 0px;
   height: 140px;
@@ -216,13 +215,9 @@ img.img4{
   left: 290px;
   top: 1400px;
 }
-div.text6{
-  position: relative;
-  left: 1100px;
-  top: 1140px;
-}
 
-p.text888{
+
+p.thirdParagraphProperty{
   height: 166px;
   width: 445px;
   left: 0px;
@@ -242,12 +237,12 @@ img.img5{
   left: 290px;
   top: 1400px;
 }
-div.text9{
+div.thirdTextPosition{
   position: relative;
   left: 1100px;
   top: 1100px;
 }
-h1.text777{
+h1.thirdTextProperty{
   height: 48px;
   width: 445px;
   left: 0px;
@@ -269,18 +264,14 @@ img.img6{
   top: 1400px;
   border-radius: 0px;
 }
-div.text12{
-  position: relative;
-  left: 1100px;
-  top: 1100px;
-}
-img.img7{
+
+img.img77{
   height: 36px;
   width: 36px;
   left: 0px;
   top: 0px;
 }
-h1.text14{
+h1.subtext{
   height: 26px;
   width: 255px;
   left: 0px;
@@ -293,7 +284,7 @@ h1.text14{
   line-height: 26px;
   color: #091133;
 }
-p.text15{
+p.subparagraph{
   height: 54px;
   width: 255px;
   left: 0px;
@@ -306,25 +297,23 @@ p.text15{
   line-height: 18px;
   color: #5D6970;
 }
-div.text13{
+div.titleGoesHere1{
   position: relative;
   height: 138px;
   width: 255px;
   left: 0px;
   top: 50px;
-  display: flex;
-  flex-direction:column;
+
 }
-div.text16{
+div.titleGoesHere2{
   position: relative;
   height: 138px;
   width: 255px;
   left: 260px;
   top: -88px;
-  display: flex;
-  flex-direction:column;
+
 }
-div.prop{
+div.beforeFooter{
   height: 705px;
   width: 2547px;
   left: -620.2857666015625px;
@@ -338,13 +327,13 @@ div.prop{
   opacity: 0.7;
   z-index: 1;
 }
-div.text17{
+div.priceInfo{
   position: relative;
   left: 610px;
   top: 1370px;
   z-index: 2;
 }
-h1.text18{
+h1.priceText{
   height: 48px;
   width: 600px;
   left: 0px;
@@ -359,7 +348,7 @@ h1.text18{
   color: #091133;
 
 }
-p.text19{
+p.priceParagraph{
   height: 78px;
   width: 600px;
   left: 0px;
@@ -373,7 +362,7 @@ p.text19{
   text-align: center;
   color: #6F7CB2;
 }
-h1.text20{
+h1.pricePrice{
   height: 66px;
   width: 350px;
   left: 125px;
@@ -389,7 +378,7 @@ h1.text20{
   letter-spacing: 1px;
   color: #222F65;
 }
-p.text21{
+p.someText1{
   height: 26px;
   width: 350px;
   left: 125px;
@@ -404,7 +393,7 @@ p.text21{
   text-align: center;
   color: #37447E;
 }
-p.text22{
+p.someText2{
   height: 24px;
   width: 350px;
   left: 128px;
@@ -448,7 +437,7 @@ footer.prop1{
 div.flexxx{
   display: flex;
 }
-p.text23{
+p.companyName{
   position: relative;
   height: 24px;
   width: 133px;
@@ -461,7 +450,7 @@ p.text23{
   line-height: 24px;
   color: #939EA4;
 }
-h1.text24{
+h1.LandieTitle{
   height: 38px;
   width: 79px;
   left: 720px;
@@ -499,14 +488,14 @@ hr.line{
   position: absolute;
   background: #CDD1D4;
 }
-ul.media1{
+ul.footerMenu{
   display: flex;
   list-style-type:none;
   position: relative;
   top:64px;
   left:170px;
 }
-ul.media2{
+ul.media{
   display: flex;
   list-style-type:none;
   position: relative;
@@ -515,7 +504,7 @@ ul.media2{
 }
 
 
-img.img7{
+img.facebook{
   height: 16px;
   width: 16px;
   left: -20px;
@@ -523,7 +512,7 @@ img.img7{
   position: relative;
   right: 25%;
 }
-img.img8{
+img.linked-in{
   height: 16px;
   width: 16px;
   left: 5px;
@@ -531,7 +520,7 @@ img.img8{
   border-radius: 0px;
   position: relative;
 }
-img.img9{
+img.birdImg{
   height: 16px;
   width: 16px;
   left: 30px;
@@ -539,7 +528,7 @@ img.img9{
   position: relative;
   right: 17.85%;
 }
-img.img10{
+img.youtubeImg{
   height: 16px;
   width: 16px;
   left: 55px;
@@ -547,7 +536,7 @@ img.img10{
   position: relative;
   right: 14.65%;
 }
-img.img11{
+img.instaImg{
   height: 16px;
   width: 16px;
   left: 80px;
@@ -563,12 +552,19 @@ div.mail{
   top:50px;
   right: 100px;
 }
+div.title111{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top:60px;
+  right: 98px;
+}
 div.medellande{
   text-align: center;
   justify-items: center;
   position: relative;
   top:70px;
-  right: 110px;
+  right: 117px;
 }
 .mailll{
   width: 300px;

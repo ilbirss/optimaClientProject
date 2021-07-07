@@ -1,6 +1,7 @@
-const email= document.getElementById("email");
-const message = document.getElementById("mess");
-const span = document.getElementsByTagName("span")
+const $email = document.getElementById("email");
+const $title = document.getElementById("subject");
+const $message = document.getElementById("text");
+
 
 const $modal = document.getElementById("modal");
 const $btnModal = document.getElementById("modal-btn");
@@ -22,9 +23,12 @@ function closeModal(){
 function ValidateEmail()
 {
   const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  if(mailformat.test(email.value))
+
+  if(mailformat.test($email.value) && $title.value && $message.value)
   {
-    alert("Valid email address!");
+    sendEmail()
+    $modal.style.display="none"
+    $bodyView.style.overflow="scroll"
     return true;
   }
   else
@@ -33,6 +37,48 @@ function ValidateEmail()
     return false;
   }
 }
+
+
+const sendEmail = () => {
+  const requestOptions = {
+    method: 'POST',
+    /*mode: 'no-cors',*/
+    body: JSON.stringify({email:$email.value, subject:$title.value, text:$message.value}),
+    headers: { 'Content-Type': 'application/json; charset=UTF-8'},
+  };
+  fetch(`http://localhost:3000/send-mail`, requestOptions)
+    .then((response) => response.json())
+    .then((json) => console.log(json))
+    .catch((error) => console.log(error))
+}
+
+
+/*const sendEmail = () => {
+  return fetch(`https://secret-cove-76589.herokuapp.com/send-mail`, {
+    method: 'POST',
+    body: JSON.stringify(info),
+    headers: { 'Content-Type': 'application/json; charset=UTF-8'}
+  })
+    .then((response) => response.json())
+    .then((json) => console.log(json))
+    .catch(err => console.log(err))
+}*/
+
+
+/*
+då behöver man sätta  info i body: JSON.stringify
+const info= {
+  email : document.getElementById("email").value,
+  subject: document.getElementById("subject").value,
+  text: document.getElementById("text").value
+};
+*/
+
+
+
+
+
+
 /*email.onkeydown = function (){
   const regex =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if(regex.test(email.value)){

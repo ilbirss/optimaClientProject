@@ -12,12 +12,12 @@ img.img1{
   top: 100px;
   position: relative;
 }
-div.text1{
+div.textPosition{
   position: relative;
   top:-850px;
   left:300px;
 }
-h1.text2{
+h1.textProperty{
   height: 96px;
   width: 520px;
   font-family: Roboto, serif;
@@ -27,7 +27,7 @@ h1.text2{
   line-height: 48px;
   color: #091133;
 }
-p.text3{
+p.paragraphProperty{
   height: 140px;
   width: 520px;
   font-family: Roboto, serif;
@@ -37,22 +37,22 @@ p.text3{
   line-height: 26px;
   color: #6F7CB2;
 }
-div.text4{
+div.subTextPosition1{
   position: relative;
   top:-750px;
   left:300px;
 }
-div.text44{
+div.subTextPosition2{
   position: relative;
   top:-870px;
   left:550px;
 }
-div.text444{
+div.subTextPosition3{
 position: relative;
   top:-820px;
   left:300px;
 }
-div.text4444{
+div.subTextPosition4{
 position: relative;
   top:-940px;
   left:550px;
@@ -63,7 +63,7 @@ img.img2{
   left: 0px;
   top: 0px;
 }
-h1.text5{
+h1.subText{
   height: 26px;
   width: 325px;
   font-family: Roboto, serif;
@@ -73,7 +73,7 @@ h1.text5{
   line-height: 26px;
   color: #091133;
 }
-p.text6{
+p.subParagraph{
   height: 36px;
   width: 325px;
   font-family: Roboto, serif;
